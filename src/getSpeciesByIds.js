@@ -8,3 +8,4 @@ const getSpeciesByIds = (ids) => {
 };
 
 module.exports = getSpeciesByIds;
+
