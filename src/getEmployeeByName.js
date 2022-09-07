@@ -7,7 +7,7 @@ function getEmployeeByName(employeeName) {
     return {};
   }
 
-  const getEmployee = employees.find((employee) => employee.firstName === employeeName 
+  const getEmployee = employees.find((employee) => employee.firstName === employeeName
   || employee.lastName === employeeName);
   return getEmployee;
 }
