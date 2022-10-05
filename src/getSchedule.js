@@ -8,7 +8,7 @@ function getSchedule(scheduleTarget) {
             const days = hour;
             if (!acc[days]) {
                 acc[days] = {
-                    'officeHours': 'Open from am until pm', 
+                    'officeHours': 'Open from am until pm',
                     'exhibition': [],
                 };
             }
@@ -18,11 +18,11 @@ function getSchedule(scheduleTarget) {
     }
     const speciesFound = species.find((specie) => scheduleTarget === specie.name);
 
-    if(!speciesFound) {
+    if (!speciesFound) {
         const dayFound = hours.find((hour) => scheduleTarget === hour);
         return dayFound;
     }
     return speciesFound.availability;
-};
+}
 
 module.exports = getSchedule;
